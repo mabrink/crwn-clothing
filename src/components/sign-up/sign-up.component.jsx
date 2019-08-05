@@ -57,13 +57,13 @@ handleChange = event => {
                 <span>Sign up with your email and password</span>
                 <form className='sign-up-form' onSubmit={this.handleSubmit} >
                     <FormInput
-                    type='test'
+                    type='text'
                     name='displayName'
                     value={displayName}
                     onChange={this.handleChange}
                     label='Display Name'
-                    />
-                
+                    required
+                    />              
                 <FormInput
                     type='email'
                     name='email'
@@ -85,7 +85,7 @@ handleChange = event => {
                     name='confirmPassword'
                     value={confirmPassword}
                     onChange={this.handleChange}
-                    label='Confrim Password'
+                    label='Confirm Password'
                     required
                     />        
                 <CustomButton type='submit'> SIGN UP </CustomButton>
